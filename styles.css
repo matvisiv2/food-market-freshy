@@ -63,7 +63,7 @@ body {
     padding-top: 22px;
 }
 .categories {
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
     padding: 0;
 }
@@ -107,7 +107,8 @@ input[type="radio"] {
 }
 .category-content .card {
     display: inline-block;
-    width: calc(25% - 30px);
+    max-width: 270px;
+    /* width: calc(25% - 30px); */
     background-color: #FBF4F0;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
