@@ -1,0 +1,159 @@
+/* Загальні стилі для сайту */
+
+/* Скидаємо стилі браузера */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Встановлення змінних для шрифтів */
+:root {
+    --font-family: "Istok Web", sans-serif;
+    --second-family: "Source Sans Pro", sans-serif;
+    --third-family: "Inter", sans-serif;
+    --font3: "Segoe UI", sans-serif;
+}
+/* Тіло сторінки */
+body {
+    font-family: var(--font-family), sans-serif; 
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+/* Контейнери для центрованого контенту */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+
+/* styles by Alena */
+.accent-part {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: #f69946;
+}
+.company-slogan {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 120%;
+    text-align: center;
+    color: #333;
+    padding-top: 17px;
+}
+.text-about-us {
+    max-width: 762px;
+    text-align: center;
+    margin: 0 auto;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 156%;
+    color: #333;
+    padding-top: 22px;
+}
+.categories {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+.categories-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding-top: 50px;
+}
+.category-item {
+    cursor: pointer;
+}
+input[type="radio"] {
+    appearance: none; /* Прибирає стандартний вигляд радіо кнопки */
+    -webkit-appearance: none; /* Для Webkit-браузерів */
+    -moz-appearance: none; /* Для Firefox */
+}    
+.category-label {
+    font-size: 14px;
+    font-weight: 700;
+    color: #2c2c2c;
+    padding: 10px;
+    cursor: pointer;
+    opacity: 60%;
+    transition: text-decoration 0.3s ease, color 0.3s ease;
+}
+.category-label:hover {
+    opacity: 100%;
+}
+.category-label.active {
+    text-decoration: underline;
+    color: #F69946; 
+}
+.category-content {
+    display: none;
+    padding: 10px;
+    
+}
+.category-content .card {
+    display: inline-block;
+    width: calc(25% - 30px);
+    background-color: #FBF4F0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+.category-content .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.card {
+    padding: 40px 30px 40px 30px;
+}
+.card img {
+    width: 100%;
+    height: auto;
+}
+.product-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 133%;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: #333;
+    margin: 10px 0;
+}
+.price {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 133%;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #a9c623;
+    margin-bottom: 10px;
+}
+.buy-now {
+    border-radius: 5px;
+    border: 2px solid #a9c623;
+    width: 93px;
+    height: 42px;
+    background: rgba(0, 0, 0, 0);
+    color: #F69946;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.buy-now:hover {
+    background-color: #A9C623;
+    color: #fff;
+}
+input[type="radio"]:checked + .category-label + .category-content {
+    display: block;
+}
