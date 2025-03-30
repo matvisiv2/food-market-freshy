@@ -158,3 +158,41 @@ input[type="radio"] {
 input[type="radio"]:checked + .category-label + .category-content {
     display: block;
 }
+
+/* Anton */
+#organic_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    margin-left: 100px;
+    margin-right: 100px;
+    gap: 35px;
+     margin-top: 30px;
+
+}
+
+.card_org{
+    background-color: #FBF4F0;
+ 
+}
+.img_org{
+    margin-left: 25px;
+    width: 80%;
+}
+
+.button_org{
+    margin-left: 80px;
+    margin-bottom: 40px;
+}
+
+.reviews{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.reviews_visitors{
+
+    background-color: #FBF4F0;
+}
+    /* Anton */
