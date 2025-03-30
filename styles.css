@@ -167,7 +167,7 @@ input[type="radio"]:checked + .category-label + .category-content {
     margin-left: 100px;
     margin-right: 100px;
     gap: 35px;
-     margin-top: 30px;
+    margin-top: 30px;
 
 }
 
@@ -194,5 +194,54 @@ input[type="radio"]:checked + .category-label + .category-content {
 .reviews_visitors{
 
     background-color: #FBF4F0;
+}
+
+.contacts_shedule{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 35px;
+    height: 300px;
+    margin-right: 90px;
+    margin-left: 90px; 
+    margin-top: 60px;
+    margin-bottom: 120px;
+}
+.contacts{
+    background-image: url("images_organic/fruits_3.jpg"); 
+}
+
+.shedule{
+    background-image: url("images_organic/fruits.jpg");
+}
+
+.left{
+    text-align: left;
+    margin-top: 100px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.title_black{
+    margin-left: 40px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: rgb(27, 26, 26);
+}
+
+.green_text{
+    margin-left: 40px;
+    color:rgb(23, 223, 40);
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 20px;
+}
+.orange_text{
+    margin-left: 40px;
+    color:#f69946;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 20px;
 }
     /* Anton */
