@@ -189,11 +189,40 @@ input[type="radio"]:checked + .category-label + .category-content {
     display: flex;
     justify-content: space-around;
     gap: 20px;
+    margin-top: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 120px;
 }
 
 .reviews_visitors{
-
     background-color: #FBF4F0;
+}
+
+.img_visitirs{
+    margin-top: 30px;
+    margin-left: 55px;
+    width: 50%;
+}
+
+.name_visitirs{
+    margin-top: 10px;
+    text-align: center;
+    color: #F69946;
+}
+
+.blockuote{
+    font-style: italic;
+    color: gray;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.data{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 700;
+    margin-bottom: 40px;
 }
 
 .contacts_shedule{
