@@ -1,0 +1,24 @@
+/* Andrii */
+#top_picks_row{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 120px;
+}
+
+.card_org{
+    background-color: #FBF4F0;
+ 
+}
+.img_org{
+    margin-left: 25px;
+    width: 80%;
+}
+
+.button_org{
+    margin-left: 80px;
+    margin-bottom: 40px;
+}
