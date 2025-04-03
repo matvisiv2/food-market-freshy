@@ -281,9 +281,8 @@ input[type="radio"] {
 input[type="radio"]:checked + .category-label + .category-content {
     display: block;
 }
-<<<<<<< HEAD
-/* styles by Alena */
-=======
+
+
 
 /* Andrii */
 #top_picks_row{
@@ -426,4 +425,4 @@ input[type="radio"]:checked + .category-label + .category-content {
     font-size: 20px;
 }
     /* Anton */
->>>>>>> 892bab9a4d554e07a2d3e6fdf133400b8eb7ca4b
+
