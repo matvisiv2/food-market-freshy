@@ -48,8 +48,9 @@ header img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 40px;
     background-color: #FBF4F0;
+    
 }
 .contact-info {
     display: flex;
@@ -86,9 +87,11 @@ header img {
     width: 27px;
     height: 27px;
 }
-/* .social-icon {
-    fill: #A49D98;
-} */
+.social-icon {
+   
+    width: 30px;
+    height: 30px;
+}
 
 .bottom-header {
     display: flex;
@@ -131,7 +134,7 @@ header img {
     justify-content: center;
 }
 .hero-desc {
-    padding-left: 20px;
+    padding: 40px;
     width: 1200px;
     display: flex;
     flex-direction: column;
@@ -143,15 +146,51 @@ header img {
     line-height: 110%;
     color: #a9c623;
 }
+.main-title-acсent {
+    display: block;
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 110%;
+    color: #000;
+    padding-bottom: 45px;
+}
 .hero-buttons {
     display: flex;
+    gap: 20px;
 }
-
-
-
-
-/* styles by Alena */
-
+.btn-shop {
+    border-radius: 5px;
+    width: 167px;
+    height: 55px;
+    background-color: #A9C623;
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 100%;
+    text-align: center;
+    color: #fff;
+    border: none;
+}
+.btn-shop:hover {
+    background-color: #90A824;
+}
+.btn-app {
+    border-radius: 5px;
+    width: 177px;
+    height: 55px;
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 100%;
+    text-align: center;
+    color: #f69946;
+    border: 2px solid #A9C623;
+}
+.btn-app:hover {
+    background-color: #A9C623;
+    color: #fff;
+}    
 
 
 /* styles by Alena */
@@ -161,8 +200,8 @@ header img {
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.05em;
-    text-align: center;
     color: #f69946;
+    padding-bottom: 7px;
 }
 .company-slogan {
     font-family: var(--font-family);
