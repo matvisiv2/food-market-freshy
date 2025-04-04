@@ -1,19 +1,15 @@
-/* Загальні стилі для сайту */
-
-/* Скидаємо стилі браузера */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/* Встановлення змінних для шрифтів */
+
 :root {
     --font-family: "Istok Web", sans-serif;
     --second-family: "Source Sans Pro", sans-serif;
     --third-family: "Inter", sans-serif;
-    --font3: "Segoe UI", sans-serif;
 }
-/* Тіло сторінки */
+
 body {
     font-family: var(--font-family), sans-serif; 
     background-color: #fff;
@@ -29,16 +25,9 @@ body {
     margin: 0 auto;
     padding: 20px;
 }
-/* .section {
-    padding-top: 40px;
-    padding-bottom: 40px; 
-} */
-
 .header {
     background-color: #fff;
     margin: 0 auto;
- 
-
 }
 header img {
     width: auto;
@@ -49,8 +38,7 @@ header img {
     justify-content: space-between;
     align-items: center;
     padding: 40px;
-    background-color: #FBF4F0;
-    
+    background-color: #FBF4F0;    
 }
 .contact-info {
     display: flex;
@@ -88,11 +76,9 @@ header img {
     height: 27px;
 }
 .social-icon {
-   
     width: 30px;
     height: 30px;
 }
-
 .bottom-header {
     display: flex;
     justify-content: space-between;
@@ -168,9 +154,19 @@ header img {
     font-weight: 700;
     font-size: 13px;
     line-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    gap: 3px;
     color: #fff;
     border: none;
+}
+
+.icon {
+    width: 18px;  /* Розмір іконки */
+    height: 18px;
+    fill: currentColor; /* Іконка отримає колір тексту */
 }
 .btn-shop:hover {
     background-color: #90A824;
@@ -183,6 +179,9 @@ header img {
     font-weight: 700;
     font-size: 13px;
     line-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     color: #f69946;
     border: 2px solid #A9C623;
@@ -224,7 +223,6 @@ header img {
     padding-top: 22px;
 }
 .categories {
-    /* max-width: 1200px; */
     margin: 0 auto;
     padding: 0;
 }
@@ -347,8 +345,31 @@ input[type="radio"]:checked + .category-label + .category-content {
     margin-left: 80px;
     margin-bottom: 40px;
 }
-
-
+.food-icons-section {
+    background: url('./images/Container.png') top center no-repeat, #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.food-list {
+    max-width: 1200px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.food-item {
+    list-style: none;
+    width: 210px;
+}
+.food-label {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 140%;
+    text-align: center;
+    color: #333;
+}
 /* Anton */
 #organic_grid{
     display: grid;
