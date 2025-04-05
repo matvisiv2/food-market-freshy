@@ -237,7 +237,7 @@ header img {
     flex-wrap: wrap;
     margin: 0 auto;
     padding: 0;
-}
+}    
 .category-buttons {
     display: flex;
     justify-content: center;
@@ -256,17 +256,15 @@ header img {
     background-color: transparent;
     padding: 14px 14px 14px 20px;
     opacity: 60%;
-    transition: opacity 0.3s ease;
+    transition: border-bottom 0.3s ease, opacity 0.3s ease;
 }
 .category-btn-content:hover {
+    border-bottom: 2px solid #f69946;
     opacity: 100%;
 }
-.category-btn-content.active-btn {
-    text-decoration: underline;
-    text-decoration-color: #F69946;  
-    padding-bottom: 10px;
-    
-}
+/* .category-buttons:hover {
+    border-bottom: 2px solid #f69946;
+} */
 /* .categories-list {
     list-style: none;
     display: flex;
@@ -296,7 +294,7 @@ header img {
     text-decoration: underline;
     color: #F69946; 
 } */
-#fruits-content, #vegetables-content, #berries-content, #nuts-content {
+.category-content#fruits-content, .category-content#vegetables-content, .category-content#berries-content, .category-content#nuts-content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -311,9 +309,9 @@ header img {
 .category-content.active {
     display: block;
 }
-#fruits-content {
+/* #fruits-content {
     display: block; 
-}
+} */
 .category-content .card {
     display: inline-block;
     background-color: #FBF4F0;
@@ -328,8 +326,8 @@ header img {
     padding: 40px 30px 40px 30px;
 }
 .card img {
-    width: 100%;
-    height: auto;
+    width: 210px;
+    height: 210px;
 }
 .product-title {
     font-weight: 600;
@@ -399,16 +397,27 @@ header img {
     text-align: center;
     color: #333;
 }
-.features {
-    background: url('./images/Container-features.jpg') top center no-repeat, #fff;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    flex-direction: column;
-    padding-top: 120px;
-    padding-bottom: 107px;
 
-   
+.features {
+    background-image: url('./images/Container-features.jpg');
+    background-size: cover;
+  background-position: left center;
+  background-repeat: no-repeat;  
+  padding: 60px 0;
+
+}
+.features-wrapper {
+    min-height: 707px;
+    display: flex;
+  justify-content: flex-end;
+  align-items: center;
+ 
+    
+  }
+  
+.features-content {
+    width: 50%;
+    padding: 20px;
 }
 .accent-quetion {
     font-family: var(--second-family);
@@ -417,20 +426,29 @@ header img {
     line-height: 130%;
     color: #a9c623;
 }
-.text-about-us {
+/* .features-text {
+    width: 570px;
+} */
+/* .text-about-us {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 18px;
     line-height: 156%;
     color: #333;
-}
-.features-list {
+} */
+/* .features-list {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     gap: 15px; 
     justify-content: space-between;
 
+} */
+.features-list {
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 40px;
+  margin-top: 30px;
 }
 .features-item {
     /* flex: 0 1 calc(50% - 15px); */
@@ -455,8 +473,7 @@ header img {
     line-height: 156%;
     color: #333;
 }
-.features-namee {
-}
+
 
 
 /* Andrii */
