@@ -20,10 +20,9 @@ body {
 }
 /* Контейнери для центрованого контенту */
 .container {
-    width: 90%;
-    max-width: 1200px;
+    width: 100%;
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 20px;
 }
 .header {
     background-color: #fff;
@@ -37,7 +36,7 @@ header img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px;
+    padding: 17px 37px;
     background-color: #FBF4F0;    
 }
 .contact-info {
@@ -65,25 +64,28 @@ header img {
 .contact-info a:hover {
     border-bottom: 2px solid #f69946;
 }
-
 .social-media {
     display: flex;
     gap: 15px;
 }
 .social-link {
-    display: block;
+    display: inline-block;
     width: 27px;
     height: 27px;
 }
 .social-icon {
     width: 30px;
     height: 30px;
+    transition: fill 0.3s ease;
 }
+.social-link:hover .social-icon {
+    fill: #f69946;
+}    
 .bottom-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 40px;
+    padding: 37px;
 }
 .header-nav {
     margin: 0;
@@ -106,12 +108,10 @@ header img {
 .header-list-item a:hover {
     color: #f69946;
 }    
-
 .hero {
     position: relative;
     width: 100%;
-    height: 806px; 
-    background-image: url("./images/hero_background.png");
+    background-image: url("./images/hero_background.jpg");
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
@@ -124,6 +124,9 @@ header img {
     width: 1200px;
     display: flex;
     flex-direction: column;
+}
+.hero-desc .accent-part {
+    text-align: left;
 }
 .main-title {
     font-family: var(--second-family);
@@ -162,11 +165,10 @@ header img {
     color: #fff;
     border: none;
 }
-
 .icon {
-    width: 18px;  /* Розмір іконки */
+    width: 18px; 
     height: 18px;
-    fill: currentColor; /* Іконка отримає колір тексту */
+    fill: currentColor;
 }
 .btn-shop:hover {
     background-color: #90A824;
@@ -193,7 +195,12 @@ header img {
 
 
 /* styles by Alena */
+.fresh-deals {
+    padding-top: 50px;
+    padding-bottom: 120px;
+}
 .accent-part {
+    text-align: center;
     font-family: var(--second-family);
     font-weight: 700;
     font-size: 16px;
@@ -201,6 +208,7 @@ header img {
     letter-spacing: 0.05em;
     color: #f69946;
     padding-bottom: 7px;
+    padding-top: 55px;
 }
 .company-slogan {
     font-family: var(--font-family);
@@ -223,10 +231,43 @@ header img {
     padding-top: 22px;
 }
 .categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     margin: 0 auto;
     padding: 0;
 }
-.categories-list {
+.category-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.category-btn-content {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    color: #2c2c2c;
+    border: none;
+    background-color: transparent;
+    padding: 14px 14px 14px 20px;
+    opacity: 60%;
+    transition: opacity 0.3s ease;
+}
+.category-btn-content:hover {
+    opacity: 100%;
+}
+.category-btn-content.active-btn {
+    text-decoration: underline;
+    text-decoration-color: #F69946;  
+    padding-bottom: 10px;
+    
+}
+/* .categories-list {
     list-style: none;
     display: flex;
     flex-wrap: nowrap;
@@ -234,16 +275,12 @@ header img {
     justify-content: center;
     margin-bottom: 30px;
     padding-top: 50px;
-}
-.category-item {
+} */
+/* .category-item {
     cursor: pointer;
-}
-input[type="radio"] {
-    appearance: none; /* Прибирає стандартний вигляд радіо кнопки */
-    -webkit-appearance: none; /* Для Webkit-браузерів */
-    -moz-appearance: none; /* Для Firefox */
-}    
-.category-label {
+} */
+/* .category-label {
+    display: inline-block;
     font-size: 14px;
     font-weight: 700;
     color: #2c2c2c;
@@ -258,17 +295,27 @@ input[type="radio"] {
 .category-label.active {
     text-decoration: underline;
     color: #F69946; 
+} */
+#fruits-content, #vegetables-content, #berries-content, #nuts-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
 .category-content {
     display: none;
-    padding: 10px;
-    
+    /* display: flex;
+    flex-wrap: wrap; 
+    gap: 30px; */
+}
+.category-content.active {
+    display: block;
+}
+#fruits-content {
+    display: block; 
 }
 .category-content .card {
     display: inline-block;
-    /* max-width: 270px; */
-    /* width: calc(25% - 30px); */
-    width: calc((100% - 90px) / 4);
     background-color: #FBF4F0;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
@@ -315,10 +362,101 @@ input[type="radio"] {
     background-color: #A9C623;
     color: #fff;
 }
-input[type="radio"]:checked + .category-label + .category-content {
-    display: block;
+.food-icons-section {
+    background: url('./images/Container.png') top center no-repeat, #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
+.food-list {
+    width: 1200px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.food-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 210px;
+    height: 160px;
+}
+.food-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 19px;
+}
+.food-label {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 140%;
+    text-align: center;
+    color: #333;
+}
+.features {
+    background: url('./images/Container-features.jpg') top center no-repeat, #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    padding-top: 120px;
+    padding-bottom: 107px;
 
+   
+}
+.accent-quetion {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    color: #a9c623;
+}
+.text-about-us {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 156%;
+    color: #333;
+}
+.features-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; 
+    justify-content: space-between;
+
+}
+.features-item {
+    /* flex: 0 1 calc(50% - 15px); */
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.features-icon img {
+    width: 70px;
+    height: 70px;
+}
+.features-info {
+    max-width: 400px;
+}
+.features-name {
+    font-size: 1rem;
+}
+.features-description {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 156%;
+    color: #333;
+}
+.features-namee {
+}
 
 
 /* Andrii */
@@ -345,31 +483,7 @@ input[type="radio"]:checked + .category-label + .category-content {
     margin-left: 80px;
     margin-bottom: 40px;
 }
-.food-icons-section {
-    background: url('./images/Container.png') top center no-repeat, #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.food-list {
-    max-width: 1200px;
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    align-items: center;
-}
-.food-item {
-    list-style: none;
-    width: 210px;
-}
-.food-label {
-    font-family: var(--second-family);
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 140%;
-    text-align: center;
-    color: #333;
-}
+
 /* Anton */
 #organic_grid{
     display: grid;
