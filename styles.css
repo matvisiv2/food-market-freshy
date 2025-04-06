@@ -165,6 +165,7 @@ body {
     gap: 3px;
     color: #fff;
     border: none;
+    cursor: pointer;
 }
 .icon {
     width: 18px; 
@@ -188,6 +189,7 @@ body {
     text-align: center;
     color: #f69946;
     border: 2px solid #A9C623;
+    cursor: pointer;
 }
 .btn-app:hover {
     background-color: #A9C623;
@@ -450,7 +452,6 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
     list-style: none;
 }
 .total-products-list-item {

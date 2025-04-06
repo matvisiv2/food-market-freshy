@@ -83,15 +83,17 @@
     <!-- made by Alena -->
     <main>
         <section class="hero container">
-            <!-- <img src="./images/hero_background.png" alt=""> -->
             <div class="hero-desc">
                 <h2 class="accent-part">Shop</h2>
                 <h1 class="main-title">Shop for Groceries <span class="main-title-acсent">Online here</span></h1>
                 <div class="hero-buttons">
-                    <button class="btn-shop">Shop Now
-                        <svg class="icon">
-                            <use href="./images/sprite.svg#icon-arrow"></use>
-                        </svg></button>
+                    <a href="#fresh-deals" style="text-decoration: none;">
+                        <div class="btn-shop">Shop Now
+                            <svg class="icon">
+                                <use href="./images/sprite.svg#icon-arrow"></use>
+                            </svg>
+                        </div>
+                    </a>
                     <button class="btn-app">Try Our App
                         <svg class="icon">
                             <use href="./images/sprite.svg#icon-app"></use>
@@ -139,7 +141,7 @@
         </section>
 
         <!-- made by Alena -->
-        <section class="fresh-deals container">
+        <section class="fresh-deals container" id="fresh-deals">
             <h2 class="accent-part">Fresh Deals</h2>
             <p class="company-slogan">Right Off the Vine</p>
             <p class="text-about-us">We are constantly updating our range and adding seasonal items. Check out the freshest products and
@@ -152,9 +154,7 @@
                     <button onclick="switchCategory('Berries')" class="category-btn-content">Berries</button>
                     <button onclick="switchCategory('Nuts')" class="category-btn-content">Nuts</button>
                 </div>
-        
-            <!-- <ul class="categories-list">
-                <li class="category-item"> -->
+
                 <div class="category-content" id="fruits-content">
                     <div class="card fruit-card">
                         <img src="./images/fruits_fresh_figs.jpg" alt="Fresh figs">
@@ -317,7 +317,25 @@
                         </li>
                     </ul>
                 </div>
-            </div>           
+            </div> 
+            <ul class="total-products-list">
+                <li class="total-products-list-item">
+                    <p class="product-item-summary">7</p>
+                    <p class="product-item-desc">NY boroughs covered</p>
+                </li>
+                <li class="total-products-list-item">
+                    <p class="product-item-summary">300+</p>
+                    <p class="product-item-desc">Fresh fruit & vegetables every day</p>
+                </li>
+                <li class="total-products-list-item">
+                    <p class="product-item-summary">12,000</p>
+                    <p class="product-item-desc">Happy clients in 2022</p>
+                </li>
+                <li class="total-products-list-item">
+                    <p class="product-item-summary">74</p>
+                    <p class="product-item-desc">Accurate couriers</p>
+                </li>
+            </ul>          
         </section>
 
       <!-- made by Andrii -->
