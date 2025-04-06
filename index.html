@@ -1,479 +1,724 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Freshy</title>
 
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:wght@500&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="./styles.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:wght@500&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
 
-<body>
-        <!-- made by Alena -->
-    <header class="header  container">
-        <div class="top-header">
-            <div class="contact-info">
-                <p class="contact-phone">Phone: <a href="tel:+1(234)5678900">+1 (234) 567 89 00</a> </p>
-                <p class="contact-location">Location: <a href="https://www.google.com/maps/place/1010+3rd+Ave,+New+York,+NY+10065,+%D0%A1%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B5%D0%BD%D1%96+%D0%A8%D1%82%D0%B0%D1%82%D0%B8+%D0%90%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B8/@40.76251,-73.9690429,17z/data=!3m1!4b1!4m6!3m5!1s0x89c258e5f6781811:0xacb15a3a4b998013!8m2!3d40.76251!4d-73.966468!16s%2Fg%2F11q2nj4tjv?entry=ttu&g_ep=EgoyMDI1MDMzMS4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D" target="_blank">1010 3rd Ave, New York</a> </p>
-            </div>
-            <div class="social-media">
-                <a href="https://facebook.com" class="social-link facebook">
-                    <svg class="social-icon" width="27px" height="27px">
-                        <use href="./images/sprite.svg#icon-facebook"></use>
-                    </svg>
-                </a>
-                <a href="https://twitter.com" class="social-link twitter"> 
-                    <svg class="social-icon" width="27px" height="27px">
-                        <use href="./images/sprite.svg#icon-twitter">
-                        </use>
-                    </svg>
-                </a>
-                <a href="https://www.youtube.com/" class="social-link youtube">
-                    <svg class="social-icon" width="27px" height="27px">
-                        <use href="./images/sprite.svg#icon-youtube">
-                        </use>
-                    </svg>
-                </a>
-                <a href="https://www.viber.com/" class="social-link viber">
-                    <svg class="social-icon" width="27px" height="27px">
-                        <use href="./images/sprite.svg#icon-viber"></use>
-                    </svg>
-                </a>
-                <a href="https://www.messenger.com/" class="social-link messenger">
-                    <svg class="social-icon" width="27px" height="27px">
-                        <use href="./images/sprite.svg#icon-messager"></use>
-                    </svg>
-                </a>
-            </div>   
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <!-- made by Alena -->
+    <header class="header container">
+      <div class="top-header">
+        <div class="contact-info">
+          <p class="contact-phone">
+            Phone: <a href="tel:+1(234)5678900">+1 (234) 567 89 00</a>
+          </p>
+          <p class="contact-location">
+            Location:
+            <a
+              href="https://www.google.com/maps/place/1010+3rd+Ave,+New+York,+NY+10065,+%D0%A1%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B5%D0%BD%D1%96+%D0%A8%D1%82%D0%B0%D1%82%D0%B8+%D0%90%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B8/@40.76251,-73.9690429,17z/data=!3m1!4b1!4m6!3m5!1s0x89c258e5f6781811:0xacb15a3a4b998013!8m2!3d40.76251!4d-73.966468!16s%2Fg%2F11q2nj4tjv?entry=ttu&g_ep=EgoyMDI1MDMzMS4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D"
+              target="_blank"
+              >1010 3rd Ave, New York</a
+            >
+          </p>
         </div>
-        <div class="bottom-header">
-
-            <img src="images/logo.svg" width="189" alt="logo-header" loading="lazy">
-            <nav class="header-nav">
-                <ul class="header-list">
-                    <li class="header-list-item">
-                        <a href="#about">About Us</a>
-                    </li>
-                    <li class="header-list-item">
-                       <a href="#shop">Shop</a>
-                    </li>
-                    <li class="header-list-item">
-                       <a href="#deals">Best Deals</a>
-                    </li>
-                    <li class="header-list-item">
-                       <a href="#app">App</a>
-                    </li>
-                    <li class="header-list-item">
-                       <a href="#contacts">Contacts</a> 
-                    </li>
-                </ul>
-            </nav>
+        <div class="social-media">
+          <a href="https://facebook.com" class="social-link facebook">
+            <svg class="social-icon" width="27px" height="27px">
+              <use href="./images/sprite.svg#icon-facebook"></use>
+            </svg>
+          </a>
+          <a href="https://twitter.com" class="social-link twitter">
+            <svg class="social-icon" width="27px" height="27px">
+              <use href="./images/sprite.svg#icon-twitter"></use>
+            </svg>
+          </a>
+          <a href="https://www.youtube.com/" class="social-link youtube">
+            <svg class="social-icon" width="27px" height="27px">
+              <use href="./images/sprite.svg#icon-youtube"></use>
+            </svg>
+          </a>
+          <a href="https://www.viber.com/" class="social-link viber">
+            <svg class="social-icon" width="27px" height="27px">
+              <use href="./images/sprite.svg#icon-viber"></use>
+            </svg>
+          </a>
+          <a href="https://www.messenger.com/" class="social-link messenger">
+            <svg class="social-icon" width="27px" height="27px">
+              <use href="./images/sprite.svg#icon-messager"></use>
+            </svg>
+          </a>
         </div>
+      </div>
+      <div class="bottom-header">
+        <img
+          src="images/logo.svg"
+          width="189"
+          alt="logo-header"
+          loading="lazy"
+        />
+        <nav class="header-nav">
+          <ul class="header-list">
+            <li class="header-list-item">
+              <a href="#about">About Us</a>
+            </li>
+            <li class="header-list-item">
+              <a href="#shop">Shop</a>
+            </li>
+            <li class="header-list-item">
+              <a href="#deals">Best Deals</a>
+            </li>
+            <li class="header-list-item">
+              <a href="#app">App</a>
+            </li>
+            <li class="header-list-item">
+              <a href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-<!-- made by Alena -->
+    <!-- made by Alena -->
     <main>
-        <section class="hero container">
-            <!-- <img src="./images/hero_background.png" alt=""> -->
-            <div class="hero-desc">
-                <h2 class="accent-part">Shop</h2>
-                <h1 class="main-title">Shop for Groceries <span class="main-title-acсent">Online here</span></h1>
-                <div class="hero-buttons">
-                    <button class="btn-shop">Shop Now
-                        <svg class="icon">
-                            <use href="./images/sprite.svg#icon-arrow"></use>
-                        </svg></button>
-                    <button class="btn-app">Try Our App
-                        <svg class="icon">
-                            <use href="./images/sprite.svg#icon-app"></use>
-                        </svg></button>
-                </div>
+      <section class="hero container">
+        <!-- <img src="./images/hero_background.png" alt=""> -->
+        <div class="hero-desc">
+          <h2 class="accent-part">Shop</h2>
+          <h1 class="main-title">
+            Shop for Groceries
+            <span class="main-title-acсent">Online here</span>
+          </h1>
+          <div class="hero-buttons">
+            <button class="btn-shop">
+              Shop Now
+              <svg class="icon">
+                <use href="./images/sprite.svg#icon-arrow"></use>
+              </svg>
+            </button>
+            <button class="btn-app">
+              Try Our App
+              <svg class="icon">
+                <use href="./images/sprite.svg#icon-app"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="food-icons-section container">
+        <div>
+          <ul class="food-list">
+            <li class="food-item">
+              <svg class="food-icon">
+                <use href="./images/sprite.svg#icon-fresh-fruit"></use>
+              </svg>
+              <h5 class="food-label">Fresh Fruit</h5>
+            </li>
+            <li class="food-item">
+              <svg class="food-icon">
+                <use href="./images/sprite.svg#icon-vegetables"></use>
+              </svg>
+              <h5 class="food-label">Vegetables</h5>
+            </li>
+            <li class="food-item">
+              <svg class="food-icon">
+                <use href="./images/sprite.svg#icon-berries"></use>
+              </svg>
+              <h5 class="food-label">Berries</h5>
+            </li>
+            <li class="food-item">
+              <svg class="food-icon">
+                <use href="./images/sprite.svg#icon-nuts"></use>
+              </svg>
+              <h5 class="food-label">Nuts</h5>
+            </li>
+            <li class="food-item">
+              <svg class="food-icon">
+                <use href="./images/sprite.svg#icon-beverages"></use>
+              </svg>
+              <h5 class="food-label">Beverages</h5>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- made by Alena -->
+      <section class="fresh-deals container">
+        <h2 class="accent-part">Fresh Deals</h2>
+        <p class="company-slogan">Right Off the Vine</p>
+        <p class="text-about-us">
+          We are constantly updating our range and adding seasonal items. Check
+          out the freshest products and add them to your shopping cart. 
+        </p>
+
+        <div class="categories container">
+          <div class="category-buttons">
+            <button
+              onclick="switchCategory('Fruit')"
+              class="category-btn-content"
+            >
+              Fruit
+            </button>
+            <button
+              onclick="switchCategory('Vegetables')"
+              class="category-btn-content"
+            >
+              Vegetables
+            </button>
+            <button
+              onclick="switchCategory('Berries')"
+              class="category-btn-content"
+            >
+              Berries
+            </button>
+            <button
+              onclick="switchCategory('Nuts')"
+              class="category-btn-content"
+            >
+              Nuts
+            </button>
+          </div>
+
+          <!-- <ul class="categories-list">
+                <li class="category-item"> -->
+          <div class="category-content" id="fruits-content">
+            <div class="card fruit-card">
+              <img src="./images/fruits_fresh_figs.jpg" alt="Fresh figs" />
+              <h4 class="product-title">Fresh figs</h4>
+              <p class="price">5,00USD</p>
+              <button type="button" class="buy-now">Buy Now</button>
             </div>
-        </section>
-
-        <section class="food-icons-section container">
-            <div>
-                <ul class="food-list">
-                    <li class="food-item">
-                        <svg class="food-icon">
-                            <use href="./images/sprite.svg#icon-fresh-fruit"></use>
-                        </svg>
-                        <h5 class="food-label">Fresh Fruit</h5>
-                    </li>
-                    <li class="food-item">
-                        <svg class="food-icon">
-                            <use href="./images/sprite.svg#icon-vegetables"></use>
-                        </svg>
-                        <h5 class="food-label">Vegetables</h5>
-
-                    </li>
-                    <li class="food-item">
-                        <svg class="food-icon">
-                            <use href="./images/sprite.svg#icon-berries"></use>
-                        </svg>
-                        <h5 class="food-label">Berries</h5>
-                    </li>
-                    <li class="food-item">
-                        <svg class="food-icon">
-                            <use href="./images/sprite.svg#icon-nuts"></use>
-                        </svg>
-                        <h5 class="food-label">Nuts</h5>
-                    </li>
-                    <li class="food-item">
-                        <svg class="food-icon">
-                            <use href="./images/sprite.svg#icon-beverages"></use>
-                        </svg>
-                        <h5 class="food-label">Beverages </h5>
-                    </li>
-                </ul>
+            <div class="card fruit-card">
+              <img src="./images/fruits_limes.jpg" alt="Limes" />
+              <h4 class="product-title">Limes</h4>
+              <p class="price">1,00USD</p>
+              <button type="button" class="buy-now">Buy Now</button>
             </div>
-        </section>
-
-        <!-- made by Alena -->
-        <section class="fresh-deals container">
-            <h2 class="accent-part">Fresh Deals</h2>
-            <p class="company-slogan">Right Off the Vine</p>
-            <p class="text-about-us">We are constantly updating our range and adding seasonal items. Check out the freshest products and
-                add them to your shopping cart. </p>
-            
-            <div class="categories container">
-                <div class="category-buttons">
-                    <button onclick="switchCategory('Fruit')" class="category-btn-content">Fruit</button>
-                    <button onclick="switchCategory('Vegetables')" class="category-btn-content">Vegetables</button>
-                    <button onclick="switchCategory('Berries')" class="category-btn-content">Berries</button>
-                    <button onclick="switchCategory('Nuts')" class="category-btn-content">Nuts</button>
-                </div>
-        
-            <!-- <ul class="categories-list">
+            <div class="card fruit-card">
+              <img src="./images/fruits_peaches.jpg" alt="Peaches" />
+              <h4 class="product-title">Peaches</h4>
+              <p class="price">3,00USD</p>
+              <button type="button" class="buy-now">Buy Now</button>
+            </div>
+            <div class="card fruit-card">
+              <img src="./images/fruits_tangerines.jpg" alt="Tangerines" />
+              <h4 class="product-title">Tangerines</h4>
+              <p class="price">2,00USD</p>
+              <button type="button" class="buy-now">Buy Now</button>
+            </div>
+          </div>
+          <!-- </li>
                 <li class="category-item"> -->
-                <div class="category-content" id="fruits-content">
-                    <div class="card fruit-card">
-                        <img src="./images/fruits_fresh_figs.jpg" alt="Fresh figs">
-                        <h4 class="product-title">Fresh figs</h4>
-                        <p class="price">5,00USD</p>
-                        <button type="button" class="buy-now">Buy Now</button>
-                    </div>
-                    <div class="card fruit-card">                        
-                        <img src="./images/fruits_limes.jpg" alt="Limes">
-                        <h4 class="product-title">Limes</h4>
-                        <p class="price">1,00USD</p>
-                        <button type="button" class="buy-now">Buy Now</button>
-                    </div>
-                    <div class="card fruit-card">                        
-                        <img src="./images/fruits_peaches.jpg" alt="Peaches">
-                        <h4 class="product-title">Peaches</h4>
-                        <p class="price">3,00USD</p>
-                        <button type="button" class="buy-now">Buy Now</button>
-                    </div>
-                    <div class="card fruit-card">                        
-                        <img src="./images/fruits_tangerines.jpg" alt="Tangerines">
-                        <h4 class="product-title">Tangerines</h4>
-                        <p class="price">2,00USD</p>
-                        <button type="button" class="buy-now">Buy Now</button>
-                    </div>
-                </div>
-                <!-- </li>
+          <div
+            class="category-content"
+            id="vegetables-content"
+            style="display: none"
+          >
+            <div class="card vegetable-card">
+              <img src="./images/veg_bell_pepper.jpg" alt="Pepper" />
+              <h4 class="product-title">Pepper</h4>
+              <p class="price">8,00USD</p>
+              <button type="button" class="buy-now">Buy Now</button>
+            </div>
+            <div class="card vegetable-card">
+              <img src="./images/veg_tomato.jpg" alt="Tomato" />
+              <h4 class="product-title">Tomato</h4>
+              <p class="price">4,00USD</p>
+              <button type="button" class="buy-now">Buy Now</button>
+            </div>
+            <div class="card vegetables-card">
+              <img src="./images/veg_carrots.jpg" alt="Carrots" />
+              <h4 class="product-title">Carrots</h4>
+              <p class="price">1,60USD</p>
+              <button type="button" class="buy-now">Buy Now</button>
+            </div>
+            <div class="card vegetables-card">
+              <img src="./images/veg_pumpkin.jpg" alt="Pumpkin" />
+              <h4 class="product-title">Pumpkin</h4>
+              <p class="price">1,50USD</p>
+              <button type="button" class="buy-now">Buy Now</button>
+            </div>
+          </div>
+          <!-- </li>
                 <li class="category-item"> -->
-                <div class="category-content" id="vegetables-content" style="display: none;">
-                    <div class="card vegetable-card">
-                        <img src="./images/veg_bell_pepper.jpg" alt="Pepper">
-                        <h4 class="product-title">Pepper</h4>
-                        <p class="price">8,00USD</p>
-                        <button type="button" class="buy-now">Buy Now</button>
-                    </div>
-                    <div class="card vegetable-card">                        
-                        <img src="./images/veg_tomato.jpg" alt="Tomato">
-                        <h4 class="product-title">Tomato</h4>
-                        <p class="price">4,00USD</p>
-                        <button type="button" class="buy-now">Buy Now</button>
-                    </div>
-                    <div class="card vegetables-card">                        
-                        <img src="./images/veg_carrots.jpg" alt="Carrots">
-                        <h4 class="product-title">Carrots</h4>
-                        <p class="price">1,60USD</p>
-                        <button type="button" class="buy-now">Buy Now</button>
-                    </div>
-                    <div class="card vegetables-card">                        
-                        <img src="./images/veg_pumpkin.jpg" alt="Pumpkin">
-                        <h4 class="product-title">Pumpkin</h4>
-                        <p class="price">1,50USD</p>
-                        <button type="button" class="buy-now">Buy Now</button>
-                    </div>
-                </div>
-                <!-- </li>
+          <div
+            class="category-content"
+            id="berries-content"
+            style="display: none"
+          >
+            <div class="card berries-card">
+              <img src="./images/berries_blueberries.jpg" alt="Blueberries" />
+              <h4 class="product-title">Blueberries</h4>
+              <p class="price">5,00USD</p>
+              <button type="button" class="buy-now">Buy Now</button>
+            </div>
+            <div class="card berries-card">
+              <img src="./images/berries_red_grapes.jpg" alt="Red Grapes" />
+              <h4 class="product-title">Red Grapes</h4>
+              <p class="price">3,00USD</p>
+              <button type="button" class="buy-now">Buy Now</button>
+            </div>
+            <div class="card berries-card">
+              <img src="./images/berries_water_melon.jpg" alt="Water Melon" />
+              <h4 class="product-title">Water Melon</h4>
+              <p class="price">6,00USD</p>
+              <button type="button" class="buy-now">Buy Now</button>
+            </div>
+            <div class="card berries-card">
+              <img src="./images/berries_raspberries.jpg" alt="Raspberries" />
+              <h4 class="product-title">Raspberries</h4>
+              <p class="price">3,00USD</p>
+              <button type="button" class="buy-now">Buy Now</button>
+            </div>
+          </div>
+          <!-- </li>
                 <li class="category-item"> -->
-                <div class="category-content" id="berries-content" style="display: none;">
-                    <div class="card berries-card">
-                        <img src="./images/berries_blueberries.jpg" alt="Blueberries">
-                        <h4 class="product-title">Blueberries</h4>
-                        <p class="price">5,00USD</p>
-                        <button type="button" class="buy-now">Buy Now</button>
-                    </div>
-                    <div class="card berries-card">                        
-                        <img src="./images/berries_red_grapes.jpg" alt="Red Grapes">
-                        <h4 class="product-title">Red Grapes</h4>
-                        <p class="price">3,00USD</p>
-                        <button type="button" class="buy-now">Buy Now</button>
-                    </div>
-                    <div class="card berries-card">                        
-                        <img src="./images/berries_water_melon.jpg" alt="Water Melon">
-                        <h4 class="product-title">Water Melon</h4>
-                        <p class="price">6,00USD</p>
-                        <button type="button" class="buy-now">Buy Now</button>
-                    </div>
-                    <div class="card berries-card">                        
-                        <img src="./images/berries_raspberries.jpg" alt="Raspberries">
-                        <h4 class="product-title">Raspberries</h4>
-                        <p class="price">3,00USD</p>
-                        <button type="button" class="buy-now">Buy Now</button>
-                    </div>
-                </div>
-                <!-- </li>
-                <li class="category-item"> -->
-                <div class="category-content" id="nuts-content" style="display: none;">
-                    <div class="card nuts-card">
-                        <img src="./images/nuts_cashew_nuts.jpg" alt="Cashew Nuts">
-                        <h4 class="product-title">Cashew Nuts</h4>
-                        <p class="price">13,00USD</p>
-                        <button type="button" class="buy-now">Buy Now</button>
-                    </div>
-                    <div class="card nuts-card">                        
-                        <img src="./images/nuts_macadamia_nuts.jpg" alt="Macadamia Nuts">
-                        <h4 class="product-title">Macadamia Nuts</h4>
-                        <p class="price">17,00USD</p>
-                        <button type="button" class="buy-now">Buy Now</button>
-                    </div>
-                    <div class="card nuts-card">                        
-                        <img src="./images/nuts_raw_walnuts.jpg" alt="Raw Walnuts">
-                        <h4 class="product-title">Raw Walnuts</h4>
-                        <p class="price">9,00USD</p>
-                        <button type="button" class="buy-now">Buy Now</button>
-                    </div>
-                    <div class="card nuts-card">                        
-                        <img src="./images/nuts_pistachios.jpg" alt="Pistachios">
-                        <h4 class="product-title">Pistachios</h4>
-                        <p class="price">12,00USD</p>
-                        <button type="button" class="buy-now">Buy Now</button>
-                    </div>
-                </div>
-                <!-- </li>
+          <div class="category-content" id="nuts-content" style="display: none">
+            <div class="card nuts-card">
+              <img src="./images/nuts_cashew_nuts.jpg" alt="Cashew Nuts" />
+              <h4 class="product-title">Cashew Nuts</h4>
+              <p class="price">13,00USD</p>
+              <button type="button" class="buy-now">Buy Now</button>
+            </div>
+            <div class="card nuts-card">
+              <img
+                src="./images/nuts_macadamia_nuts.jpg"
+                alt="Macadamia Nuts"
+              />
+              <h4 class="product-title">Macadamia Nuts</h4>
+              <p class="price">17,00USD</p>
+              <button type="button" class="buy-now">Buy Now</button>
+            </div>
+            <div class="card nuts-card">
+              <img src="./images/nuts_raw_walnuts.jpg" alt="Raw Walnuts" />
+              <h4 class="product-title">Raw Walnuts</h4>
+              <p class="price">9,00USD</p>
+              <button type="button" class="buy-now">Buy Now</button>
+            </div>
+            <div class="card nuts-card">
+              <img src="./images/nuts_pistachios.jpg" alt="Pistachios" />
+              <h4 class="product-title">Pistachios</h4>
+              <p class="price">12,00USD</p>
+              <button type="button" class="buy-now">Buy Now</button>
+            </div>
+          </div>
+          <!-- </li>
             </ul> -->
-            </div>
-        </section> 
+        </div>
+      </section>
 
-        <section class="features container">
-            <div class="features-wrapper">
-                <div class="features-content">
-                    <h2 class="accent-quetion">Why Choose Us</h2>
-                    <p class="company-slogan">Tasty and Healty Organic Produts for You</p>
-                    <p class="features-text">Our goal is to make your everyday shopping really easy and pleasant. We
-                        work with the best local farms, producers, and grocery stores.</p>
-            
-                    <ul class="features-list">
-                        <li class="features-item">
-                            <div class="features-icon">
-                                <img src="./images/free_delivery.svg" alt="Free Delivery">
-                            </div>
-                            <div class="features-info">
-                                <h4 class="features-name">Free Delivery</h4>
-                                <p class="features-description">Free delivery for all orders from $49.</p>
-                            </div>
-                        </li>
-                        <li class="features-item">
-                            <div class="features-icon">
-                                <img src="./images/support.svg" alt="Support 24/7">
-                            </div>
-                            <div class="features-info">
-                                <h4 class="features-name">Support 24/7</h4>
-                                <p class="features-description">Want to change your order? Just contact us.</p>
-                            </div>
-                        </li>
-                        <li class="features-item">
-                            <div class="features-icon">
-                                <img src="./images/discount.svg" alt="Discounts">
-                            </div>
-                            <div class="features-info">
-                                <h4 class="features-name">Discounts</h4>
-                                <p class="features-description">We have weekly discounts on all items.</p>
-                            </div>
-                        </li>
-                        <li class="features-item">
-                            <div class="features-icon">
-                                <img src="./images/app.svg" alt="Easy App">
-                            </div>
-                            <div class="features-info">
-                                <h4 class="features-namee">Easy App</h4>
-                                <p class="features-description">Order fresh produce on-the-go with our app.</p>
-                            </div>
-                        </li>
-                    </ul>
+      <section class="features container">
+        <div class="features-wrapper">
+          <div class="features-content">
+            <h2 class="accent-quetion">Why Choose Us</h2>
+            <p class="company-slogan">
+              Tasty and Healty Organic Produts for You
+            </p>
+            <p class="features-text">
+              Our goal is to make your everyday shopping really easy and
+              pleasant. We work with the best local farms, producers, and
+              grocery stores.
+            </p>
+
+            <ul class="features-list">
+              <li class="features-item">
+                <div class="features-icon">
+                  <img src="./images/free_delivery.svg" alt="Free Delivery" />
                 </div>
-            </div>           
-        </section>
+                <div class="features-info">
+                  <h4 class="features-name">Free Delivery</h4>
+                  <p class="features-description">
+                    Free delivery for all orders from $49.
+                  </p>
+                </div>
+              </li>
+              <li class="features-item">
+                <div class="features-icon">
+                  <img src="./images/support.svg" alt="Support 24/7" />
+                </div>
+                <div class="features-info">
+                  <h4 class="features-name">Support 24/7</h4>
+                  <p class="features-description">
+                    Want to change your order? Just contact us.
+                  </p>
+                </div>
+              </li>
+              <li class="features-item">
+                <div class="features-icon">
+                  <img src="./images/discount.svg" alt="Discounts" />
+                </div>
+                <div class="features-info">
+                  <h4 class="features-name">Discounts</h4>
+                  <p class="features-description">
+                    We have weekly discounts on all items.
+                  </p>
+                </div>
+              </li>
+              <li class="features-item">
+                <div class="features-icon">
+                  <img src="./images/app.svg" alt="Easy App" />
+                </div>
+                <div class="features-info">
+                  <h4 class="features-namee">Easy App</h4>
+                  <p class="features-description">
+                    Order fresh produce on-the-go with our app.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-<!-- made by Andrii -->
-<!-- <section class="Top Picks"> -->
-    <h6 class="accent-part">Top Picks</h6> <!-- used class from Alena -->
-    <h2 class="company-slogan">Deals of the Week</h2> <!-- used class from Alena -->
-    <p class="text-about-us">We cut prices for certain products every week. You can always order items you need at the lowest prices and enjoy seasonal items.</p> <!-- used class from Alena -->
-    
-    <section id="top_picks_row">
-        <div class="card_org">  <!-- first card -->                      
-            <img src="./images_top_picks/Granny Smith Apples.png" alt="Granny Smith Apples" class="img_org">
-            <h4 class="product-title">Granny Smith Apples</h4><!-- used class from Alena -->
-            <p class="price">2,00USD</p><!-- used class from Alena -->
-            <button type="button" class="buy-now button_org">Buy Now</button>
-        </div>
-        <div class="card_org">   <!-- second card -->                       
-            <img src="./images_top_picks/Strawberries.png" alt="Strawberries"  class="img_org">
-            <h4 class="product-title">Strawberries</h4><!-- used class from Alena -->
-            <p class="price">8,00USD</p><!-- used class from Alena -->
-            <button type="button" class="buy-now button_org">Buy Now</button>
-        </div>
-        <div class="card_org">  <!-- third card -->                        
-            <img src="./images_top_picks/Blackberries.png" alt="Blackberries"  class="img_org">
-            <h4 class="product-title">Blackberries</h4><!-- used class from Alena -->
-            <p class="price">4,00USD</p><!-- used class from Alena -->
-            <button type="button" class="buy-now button_org">Buy Now</button>
-        </div>
-        <div class="card_org">     <!-- fourth card -->                     
-            <img src="./images_top_picks/Mango.png" alt="Mango"  class="img_org">
-            <h4 class="product-title">Mango</h4><!-- used class from Alena -->
-            <p class="price">2,50USD</p><!-- used class from Alena -->
-            <button type="button" class="buy-now button_org">Buy Now</button>
-        </div>
-    </section>
+      <!-- made by Andrii -->
+      <!-- <section class="Top Picks"> -->
+      <h6 class="accent-part">Top Picks</h6>
+      <!-- used class from Alena -->
+      <h2 class="company-slogan">Deals of the Week</h2>
+      <!-- used class from Alena -->
+      <p class="text-about-us">
+        We cut prices for certain products every week. You can always order
+        items you need at the lowest prices and enjoy seasonal items.
+      </p>
+      <!-- used class from Alena -->
 
-        <!-- made by Anton -->
-<!-- <section class="organic"> -->
-    <h6 class="accent-part">Organic</h6> <!-- used class from Alena -->
-    <h2 class="company-slogan">Produce From Local Farms</h2> <!-- used class from Alena -->
-    <p class="text-about-us">We offer non-GMO produce from our partners. We work with small local farms that grow the best fruit and vegetables and offer them at affordable prices.</p> <!-- used class from Alena -->
-    
-    <section id="organic_grid">
-        <div class="card_org">  <!-- first card -->                      
-            <img src="./images_organic/sugar_snap_peas.png" alt="Sugar Snap Peas" class="img_org">
-            <h4 class="product-title">Sugar Snap Peas</h4><!-- used class from Alena -->
-            <p class="price">5,00USD</p><!-- used class from Alena -->
-            <button type="button" class="buy-now button_org">Buy Now</button>
-        </div>
-        <div class="card_org">   <!-- second card -->                       
-            <img src="./images_organic/Cherries.png" alt="Cherries"  class="img_org">
-            <h4 class="product-title">Cherries</h4><!-- used class from Alena -->
-            <p class="price">12,00USD</p><!-- used class from Alena -->
-            <button type="button" class="buy-now button_org">Buy Now</button>
-        </div>
-        <div class="card_org">  <!-- third card -->                        
-            <img src="./images_organic/green_cucumbers.png" alt="Green Cucumbers"  class="img_org">
-            <h4 class="product-title">Green Cucumbers</h4><!-- used class from Alena -->
-            <p class="price">1,50USD</p><!-- used class from Alena -->
-            <button type="button" class="buy-now button_org">Buy Now</button>
-        </div>
-        <div class="card_org">     <!-- fourth card -->                     
-            <img src="./images_organic/honeydew_melon.png" alt="Honeydew Melon"  class="img_org">
-            <h4 class="product-title">Honeydew Melon</h4><!-- used class from Alena -->
-            <p class="price">5,00USD</p><!-- used class from Alena -->
-            <button type="button" class="buy-now button_org">Buy Now</button>
-        </div>
-        <div class="card_org">       <!-- fives card -->                   
-            <img src="./images_organic/raw_almonds.png" alt="Raw Almonds"  class="img_org">
-            <h4 class="product-title">Raw Almonds</h4><!-- used class from Alena -->
-            <p class="price">9,00USD</p><!-- used class from Alena -->
-            <button type="button" class="buy-now button_org">Buy Now</button>
-        </div>
-        <div class="card_org">     <!-- sixth card -->                     
-            <img src="./images_organic/broccoly_crows.png" alt="Broccoly Crows"  class="img_org">
-            <h4 class="product-title">Broccoly Crows</h4><!-- used class from Alena -->
-            <p class="price">1,50USD</p><!-- used class from Alena -->
-            <button type="button" class="buy-now button_org">Buy Now</button>
-        </div>
-        <div class="card_org">          <!-- seventh card -->                 
-            <img src="./images_organic/dried_figs.png" alt="Dried Figs"  class="img_org">
-            <h4 class="product-title">Dried Figs</h4><!-- used class from Alena -->
-            <p class="price">7,00USD</p><!-- used class from Alena -->
-            <button type="button" class="buy-now button_org">Buy Now</button>
-        </div>
-        <div class="card_org">    <!-- eighth card -->                      
-            <img src="./images_organic/green_cabbage.png" alt="Green Cabbage"  class="img_org">
-            <h4 class="product-title">Green Cabbage</h4><!-- used class from Alena -->
-            <p class="price">1,00USD</p><!-- used class from Alena -->
-            <button type="button" class="buy-now button_org">Buy Now</button>
-        </div>
-    </section>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br><!-- треба буде додати відступ в  class="accent-part"-->
-   
-    <h6 class="accent-part">Testimonials</h6> <!-- used class from Alena -->
-    <h2 class="company-slogan">What Our Customers Say</h2> <!-- used class from Alena -->
-    <p class="text-about-us">Hundreds of customers choose our fresh food delivery in New York. We are grateful for your trust and for your feedback – it make us even better! </p> 
+      <section id="top_picks_row">
+        <div class="top-picks-row-container">
+          <img
+            src="./images_top_picks/left-arrow.svg"
+            alt="left-arrow"
+            width="30px"
+            height="30px"
+            class="arrow-icon"
+          />
 
-    <section class="reviews"><!-- в подальшому це буде об'єкт, що перегортається по сторінках -->
+          <div class="category-content" id="fruits-content">
+            <div class="card fruit-card">
+              <!-- first card -->
+              <img
+                src="./images_top_picks/Granny Smith Apples.png"
+                alt="Granny Smith Apples"
+                class="img_org"
+              />
+              <h4 class="product-title">Granny Smith Apples</h4>
+              <!-- used class from Alena -->
+              <p class="price">2,00USD</p>
+              <!-- used class from Alena -->
+              <button type="button" class="buy-now">Buy Now</button>
+            </div>
+            <div class="card fruit-card">
+              <!-- second card -->
+              <img
+                src="./images_top_picks/Strawberries.png"
+                alt="Strawberries"
+                class="img_org"
+              />
+              <h4 class="product-title">Strawberries</h4>
+              <!-- used class from Alena -->
+              <p class="price">8,00USD</p>
+              <!-- used class from Alena -->
+              <button type="button" class="buy-now">Buy Now</button>
+            </div>
+            <div class="card fruit-card">
+              <!-- third card -->
+              <img
+                src="./images_top_picks/Blackberries.png"
+                alt="Blackberries"
+                class="img_org"
+              />
+              <h4 class="product-title">Blackberries</h4>
+              <!-- used class from Alena -->
+              <p class="price">4,00USD</p>
+              <!-- used class from Alena -->
+              <button type="button" class="buy-now">Buy Now</button>
+            </div>
+            <div class="card fruit-card">
+              <!-- fourth card -->
+              <img
+                src="./images_top_picks/Mango.png"
+                alt="Mango"
+                class="img_org"
+              />
+              <h4 class="product-title">Mango</h4>
+              <!-- used class from Alena -->
+              <p class="price">2,50USD</p>
+              <!-- used class from Alena -->
+              <button type="button" class="buy-now">Buy Now</button>
+            </div>
+          </div>
+          <img
+            src="./images_top_picks/right-arrow.svg"
+            alt="right-arrow"
+            width="30px"
+            height="30px"
+            class="arrow-icon"
+          />
+        </div>
+      </section>
+
+      <!-- <section class="timer-section"> -->
+      <section class="timer-section">
+        <h6 class="accent-part timer-accent-part">25% off</h6>
+        <h2 class="company-slogan timer-company-slogan">Best Deals of the Week</h2>
+        <p class="text-about-us timer-text-about-us">
+          Take advantage of our limited-time offer and get a 25% discount on any
+          items with our unique promo code!
+        </p>
+        <div class="timer-container">
+            <div class="timer-item">
+                <p class="time">364<span class="time-label">Days</span></p>
+            </div>
+            <div class="timer-item">
+                <p class="time">23<span class="time-label">Hours</span></p>
+            </div>
+            <div class="timer-item">
+                <p class="time">59<span class="time-label">Minutes</span></p>
+            </div>
+            <div class="timer-item">
+                <p class="time">59<span class="time-label">Seconds</span></p>
+            </div>
+        </div>
+        <p class="promocode">Use code: <span class="promocode-accent">Fresh Food</span></p>
+      </section>
+
+      <!-- made by Anton -->
+      <!-- <section class="organic"> -->
+      <h6 class="accent-part">Organic</h6>
+      <!-- used class from Alena -->
+      <h2 class="company-slogan">Produce From Local Farms</h2>
+      <!-- used class from Alena -->
+      <p class="text-about-us">
+        We offer non-GMO produce from our partners. We work with small local
+        farms that grow the best fruit and vegetables and offer them at
+        affordable prices.
+      </p>
+      <!-- used class from Alena -->
+
+      <section id="organic_grid">
+        <div class="card_org">
+          <!-- first card -->
+          <img
+            src="./images_organic/sugar_snap_peas.png"
+            alt="Sugar Snap Peas"
+            class="img_org"
+          />
+          <h4 class="product-title">Sugar Snap Peas</h4>
+          <!-- used class from Alena -->
+          <p class="price">5,00USD</p>
+          <!-- used class from Alena -->
+          <button type="button" class="buy-now button_org">Buy Now</button>
+        </div>
+        <div class="card_org">
+          <!-- second card -->
+          <img
+            src="./images_organic/Cherries.png"
+            alt="Cherries"
+            class="img_org"
+          />
+          <h4 class="product-title">Cherries</h4>
+          <!-- used class from Alena -->
+          <p class="price">12,00USD</p>
+          <!-- used class from Alena -->
+          <button type="button" class="buy-now button_org">Buy Now</button>
+        </div>
+        <div class="card_org">
+          <!-- third card -->
+          <img
+            src="./images_organic/green_cucumbers.png"
+            alt="Green Cucumbers"
+            class="img_org"
+          />
+          <h4 class="product-title">Green Cucumbers</h4>
+          <!-- used class from Alena -->
+          <p class="price">1,50USD</p>
+          <!-- used class from Alena -->
+          <button type="button" class="buy-now button_org">Buy Now</button>
+        </div>
+        <div class="card_org">
+          <!-- fourth card -->
+          <img
+            src="./images_organic/honeydew_melon.png"
+            alt="Honeydew Melon"
+            class="img_org"
+          />
+          <h4 class="product-title">Honeydew Melon</h4>
+          <!-- used class from Alena -->
+          <p class="price">5,00USD</p>
+          <!-- used class from Alena -->
+          <button type="button" class="buy-now button_org">Buy Now</button>
+        </div>
+        <div class="card_org">
+          <!-- fives card -->
+          <img
+            src="./images_organic/raw_almonds.png"
+            alt="Raw Almonds"
+            class="img_org"
+          />
+          <h4 class="product-title">Raw Almonds</h4>
+          <!-- used class from Alena -->
+          <p class="price">9,00USD</p>
+          <!-- used class from Alena -->
+          <button type="button" class="buy-now button_org">Buy Now</button>
+        </div>
+        <div class="card_org">
+          <!-- sixth card -->
+          <img
+            src="./images_organic/broccoly_crows.png"
+            alt="Broccoly Crows"
+            class="img_org"
+          />
+          <h4 class="product-title">Broccoly Crows</h4>
+          <!-- used class from Alena -->
+          <p class="price">1,50USD</p>
+          <!-- used class from Alena -->
+          <button type="button" class="buy-now button_org">Buy Now</button>
+        </div>
+        <div class="card_org">
+          <!-- seventh card -->
+          <img
+            src="./images_organic/dried_figs.png"
+            alt="Dried Figs"
+            class="img_org"
+          />
+          <h4 class="product-title">Dried Figs</h4>
+          <!-- used class from Alena -->
+          <p class="price">7,00USD</p>
+          <!-- used class from Alena -->
+          <button type="button" class="buy-now button_org">Buy Now</button>
+        </div>
+        <div class="card_org">
+          <!-- eighth card -->
+          <img
+            src="./images_organic/green_cabbage.png"
+            alt="Green Cabbage"
+            class="img_org"
+          />
+          <h4 class="product-title">Green Cabbage</h4>
+          <!-- used class from Alena -->
+          <p class="price">1,00USD</p>
+          <!-- used class from Alena -->
+          <button type="button" class="buy-now button_org">Buy Now</button>
+        </div>
+      </section>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br /><!-- треба буде додати відступ в  class="accent-part"-->
+
+      <h6 class="accent-part">Testimonials</h6>
+      <!-- used class from Alena -->
+      <h2 class="company-slogan">What Our Customers Say</h2>
+      <!-- used class from Alena -->
+      <p class="text-about-us">
+        Hundreds of customers choose our fresh food delivery in New York. We are
+        grateful for your trust and for your feedback – it make us even better!
+      </p>
+
+      <section class="reviews">
+        <!-- в подальшому це буде об'єкт, що перегортається по сторінках -->
         <div class="reviews_visitors">
-            <img src="./images_visitors/Andy_Peterson.png" alt="Andy Peterson"  class="img_visitirs">
-            <h3 class="name_visitirs">Andy Peterson</h3>
-            <blockquote class="blockuote">"I work late and have little time to go shopping. But I love fresh produce and wholesome food. So I started ordering food from Freshy. They bring me bags of gloceries just as I get home. The couriers are never late and are very polite and accurate."</blockquote>
-            <br><!-- треба вирівняти нижній елемент -->
-            <p class="data">November 12, 2024</p>
+          <img
+            src="./images_visitors/Andy_Peterson.png"
+            alt="Andy Peterson"
+            class="img_visitirs"
+          />
+          <h3 class="name_visitirs">Andy Peterson</h3>
+          <blockquote class="blockuote">
+            "I work late and have little time to go shopping. But I love fresh
+            produce and wholesome food. So I started ordering food from Freshy.
+            They bring me bags of gloceries just as I get home. The couriers are
+            never late and are very polite and accurate."
+          </blockquote>
+          <br /><!-- треба вирівняти нижній елемент -->
+          <p class="data">November 12, 2024</p>
         </div>
         <div class="reviews_visitors">
-            <img src="./images_visitors/Amanda_Cowson.png" alt="Amanda Cowson"  class="img_visitirs">
-            <h3 class="name_visitirs">Amanda Cowson</h3>
-            <blockquote class="blockuote">“I have two small children and cannot leave them at home, so shopping for groceries at the local store sometimes turns into a real torment for us. I recently started ordering groceries online at Freshy and it's really convenient and time-saving!"</blockquote>
-            <p class="data">October 28, 2024</p>
+          <img
+            src="./images_visitors/Amanda_Cowson.png"
+            alt="Amanda Cowson"
+            class="img_visitirs"
+          />
+          <h3 class="name_visitirs">Amanda Cowson</h3>
+          <blockquote class="blockuote">
+            “I have two small children and cannot leave them at home, so
+            shopping for groceries at the local store sometimes turns into a
+            real torment for us. I recently started ordering groceries online at
+            Freshy and it's really convenient and time-saving!"
+          </blockquote>
+          <p class="data">October 28, 2024</p>
         </div>
         <div class="reviews_visitors">
-            <img src="./images_visitors/Dean_Wisbore.png" alt="Dean Wisbore"  class="img_visitirs">
-            <h3 class="name_visitirs">Dean Wisbore</h3>
-            <blockquote class="blockuote">“I follow a healthy lifestyle and want to lose weight. Therefore, the basis of my diet is vegetables and fruit. So, I shop for groceries at Freshy and I'm completely satisfied with the quality and freshness of the produce. They often have discounts, by the way.”</blockquote>
-            <br><!-- треба вирівняти нижній елемент -->
-            <p class="data">March 28,2024</p>
+          <img
+            src="./images_visitors/Dean_Wisbore.png"
+            alt="Dean Wisbore"
+            class="img_visitirs"
+          />
+          <h3 class="name_visitirs">Dean Wisbore</h3>
+          <blockquote class="blockuote">
+            “I follow a healthy lifestyle and want to lose weight. Therefore,
+            the basis of my diet is vegetables and fruit. So, I shop for
+            groceries at Freshy and I'm completely satisfied with the quality
+            and freshness of the produce. They often have discounts, by the
+            way.”
+          </blockquote>
+          <br /><!-- треба вирівняти нижній елемент -->
+          <p class="data">March 28,2024</p>
         </div>
         <div class="reviews_visitors">
-            <img src="./images_visitors/Erika_Jacson.png" alt="Erika Jacsosn"  class="img_visitirs">
-            <h3 class="name_visitirs">Erika Jacson</h3>
-            <blockquote class="blockuote">“I follow a healthy lifestyle and want to lose weight. Therefore, the basis of my diet is vegetables and fruit. So, I shop for groceries at Freshy and I'm completely satisfied with the quality and freshness of the produce. They often have discounts, by the way.”</blockquote>
-            <br><!-- треба вирівняти нижній елемент -->
-            <p class="data">March 17, 2024</p>
+          <img
+            src="./images_visitors/Erika_Jacson.png"
+            alt="Erika Jacsosn"
+            class="img_visitirs"
+          />
+          <h3 class="name_visitirs">Erika Jacson</h3>
+          <blockquote class="blockuote">
+            “I follow a healthy lifestyle and want to lose weight. Therefore,
+            the basis of my diet is vegetables and fruit. So, I shop for
+            groceries at Freshy and I'm completely satisfied with the quality
+            and freshness of the produce. They often have discounts, by the
+            way.”
+          </blockquote>
+          <br /><!-- треба вирівняти нижній елемент -->
+          <p class="data">March 17, 2024</p>
         </div>
-     </section>
-     
-     <section class="contacts_shedule">
+      </section>
+
+      <section class="contacts_shedule">
         <div class="contacts">
-            <h6 class="accent-part left">Need Help?</h6>
-            <p class="title_black">Call Us: </p>
-            <p class="green_text">+1 (234) 567 89 00</p>
-            <p class="title_black">Write Us:</p>
-            <p class="green_text">freshy@email.com</p><!-- ТУТ ТРЕБА ДОДАТИ ПЕРЕХІД ПО ПОСИЛАННЮ -->
+          <h6 class="accent-part left">Need Help?</h6>
+          <p class="title_black">Call Us:</p>
+          <p class="green_text">+1 (234) 567 89 00</p>
+          <p class="title_black">Write Us:</p>
+          <p class="green_text">freshy@email.com</p>
+          <!-- ТУТ ТРЕБА ДОДАТИ ПЕРЕХІД ПО ПОСИЛАННЮ -->
         </div>
         <div class="shedule">
-            <h6 class="accent-part left">Working Hours</h6>
-            <p class="title_black">Monday - Friday:</p>
-            <p class="orange_text">9.00am - 10.00pm</p>
-            <p class="title_black">Saturday:</p>
-            <p class="orange_text">10.00am - 5.00pm</p>
+          <h6 class="accent-part left">Working Hours</h6>
+          <p class="title_black">Monday - Friday:</p>
+          <p class="orange_text">9.00am - 10.00pm</p>
+          <p class="title_black">Saturday:</p>
+          <p class="orange_text">10.00am - 5.00pm</p>
         </div>
-    </section><!-- Anton -->
-        
-
-
-
+      </section>
+      <!-- Anton -->
     </main>
-    <footer>
-
-    </footer>
+    <footer></footer>
 
     <script src="script.js" defer></script>
-</body>
-
+  </body>
 </html>
