@@ -29,6 +29,9 @@ body {
     margin: 0 auto;
     position: relative;
 }
+.body {
+    border: 1px solid red;
+}
 .header img {
     width: auto;
     height: 64px;
@@ -192,7 +195,7 @@ body {
         justify-content: space-between;
         gap: 20px;
         height: 80vh;
-        padding: 40px 20px;
+        padding-top: 20px;
         box-sizing: border-box;
     }
     .mobile-menu-list {
