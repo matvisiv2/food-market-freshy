@@ -29,9 +29,6 @@ body {
     margin: 0 auto;
     position: relative;
 }
-.body {
-    border: 1px solid red;
-}
 .header img {
     width: auto;
     height: 64px;
